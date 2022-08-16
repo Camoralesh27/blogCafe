@@ -83,6 +83,13 @@ img{
     margin-top: 5rem;
 }
 
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+
+
 /*! Pasicionando barra de navegacion y logo */
 @media (min-width:768px){
     .barra{
@@ -106,10 +113,15 @@ img{
 }
 
 /*! Barra de navegacion  */
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
 .navegacion__enlace{
     display: block;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
 }
-
