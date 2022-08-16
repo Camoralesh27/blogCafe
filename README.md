@@ -22,11 +22,16 @@ Para automatizar la creacion de media queries nos vamos a la barra de busqueda c
 Cada símbolo de peso representa un tab. El primero para los px y el segundo para las reglas que se modificaran.
 ___
 ### Medidas de media queries recomendados.
-1. ***Desktop*** @media (min-width:1024px){
+
+1. ***bigger Desktop*** @media (min-width:1400px){
 }
 
-2. ***Tablet*** @media (min-width:768px){
+2. ***Desktop*** @media (min-width:1140px){
 }
 
-3. ***Smartphone*** @media (min-width:320px){
+3. ***Tablet*** @media (min-width:768px){
 }
+
+4. ***Smartphone*** @media (min-width:480px){
+}
+
