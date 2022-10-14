@@ -36,7 +36,7 @@ a{
 
 h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
-    line-height: 1.2;
+    line-height: 1.2; /* Este es para el interlineado cuando la pantalla es más pequeña para que los títulos no se vean muy grandes. */
 }
 
 h1{
@@ -91,6 +91,9 @@ img{
     }
 }
 
+.barra{
+    padding-top: 4rem;
+}
 
 /*! Pasicionando barra de navegacion y logo */
 @media (min-width:768px){
@@ -194,4 +197,11 @@ img{
 
 .widget-curso__label,.widget-curso__info{
     font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    
 }
