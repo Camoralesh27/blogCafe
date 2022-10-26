@@ -121,7 +121,8 @@ img{
 @media (min-width: 768px) {
     .navegacion{
         display: flex;
-        gap: 2rem;
+        /*gap: 2rem; */
+        /* Se puede usar gap para separar los enlaces de Nosotros, Cursos y Contacto pero preferí espararlos en .navegacion__enlace con un margin ya que el gap no me estaba respondiendo en safari y se quedaban pegadas los enlaces */
     }
 }
 .navegacion__enlace{
@@ -129,6 +130,7 @@ img{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    margin: 1rem;
 }
 
 /*! Contenido principal, blog y sidebar */
@@ -203,5 +205,17 @@ img{
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
-    
+}
+
+/*! Sobre Nosotros */
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        
+    }
+    .sobre-nosotros__img, .sobre-nosotros__texto{
+        
+    }
 }
