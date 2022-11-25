@@ -53,7 +53,7 @@ h4{
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%; /* Esto hace que las imagenes de todo el sitio funcionen de manera responsiva, logrando que fluya la imagen en cualquier dispositivo. */
 }
 
 /*! Utilidades */
@@ -197,7 +197,8 @@ img{
     font-weight: normal;
 }
 
-.widget-curso__label,.widget-curso__info{
+.widget-curso__label,
+.widget-curso__info{
     font-size: 2rem;
 }
 
@@ -213,9 +214,39 @@ img{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
-        
-    }
-    .sobre-nosotros__img, .sobre-nosotros__texto{
-        
     }
 }
+
+/*! Curso */
+.curso{
+    padding: 3rem 0;
+    border-bottom: solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+/* Esto podría ir con las etiquetas de arriba en widget para evitar duplicidad de código. Pero para no darle scrol para arriba lo puso aquí el profesor y yo lo puse por ordenar las cosas por secciones y recordar que perjudica a sección de: Curso. */
+.curso__label{
+    font-family:var(--fuenteHeading);
+    font-weight: bold;
+}
+.curso__info{
+    font-weight: normal;
+}
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+
