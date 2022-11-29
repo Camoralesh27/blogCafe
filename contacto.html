@@ -44,24 +44,38 @@
     </header>
 
 
-    <!--! Contanido principal nosotros -->
+    <!--! Contanido principal CONTACTO -->
     <main class="contenedor">
         <!-- Titulo -->
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
+        <h3 class="centrar-texto">Contacto</h3>
         
         <!-- Contenido -->
-        <div class="sobre-nosotros">
-            <div class="sobre-nosotros__img">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+        <div class="contacto-bg"></div>
+        
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre:</label>
+                <input class="campo__field" id="nombre" type="text" placeholder="Tu Nombre">
             </div>
-            <div class="sobre-nosotros__texto">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ex ut metus ultrices scelerisque ut sed urna. Quisque sit amet hendrerit diam. Donec nec venenatis lectus, in convallis magna. Curabitur ac porttitor lacus. Mauris iaculis diam in tellus volutpat mollis. Mauris in sem a libero vehicula dignissim. Quisque ultrices, tortor in auctor suscipit, leo diam malesuada magna, vel consequat neque ex vitae purus. Etiam accumsan nunc eget turpis tincidunt finibus.</p>
 
-                    <p>Pellentesque a mauris justo. Donec dignissim laoreet neque, id tempor mi iaculis eget. Aenean at varius felis. Quisque in ligula eu mauris mollis venenatis eget sed augue. Sed rutrum, felis nec tempor semper, lectus dui aliquet eros, at accumsan nibh enim sit amet turpis. Pellentesque vehicula quam quis urna hendrerit suscipit.</p>
-                
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail:</label>
+                <input class="campo__field" id="email" type="email" placeholder="Tu E-mail">
             </div>
-        </div>
+
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje:</label>
+                <textarea class="campo__field" id="mensaje" ></textarea>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </form>
+
+
+        
+        
     </main>
 
 
