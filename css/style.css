@@ -162,12 +162,19 @@ img{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+
 }
 
 @media (min-width: 768px) {
     .boton{
         display: inline-block;
     }
+}
+
+/* Este sirve para que cuando pones el cursor, cambie la apariencia del cursor para enviarte a un link.*/
+.boton:hover{ 
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -266,17 +273,22 @@ img{
 
 .campo{
     display: flex;
+    margin-bottom: 2rem;
 
 }
 
 .campo__label{
     flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
 }
 
-.compo__field{
-
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
 }
 
 .campo__field--textarea{
+    height: 20rem;
 
 }
