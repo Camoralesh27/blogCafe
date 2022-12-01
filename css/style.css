@@ -70,8 +70,19 @@ img{
 }
 
 /*! Header */
-.header{
+/* Utilizamos "modernizr" para que si el navegador soporta webp utilize el banner webp, y si no soporta webp (cómo en safari), entonces que corra con jpg */
+
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+
+.no-webp .header{
     background-image: url(../img/banner.jpg);
+}
+
+.header{
+    /* Lo movimos de aquí para poder decidir entre webp o no-webp con modernizr */
+    /* background-image: url(../img/banner.jpg); */
     height: 60rem;
     background-size: cover; /* que la imagen cubra toda el área en diferentes tamaños de pantalla */
     background-repeat: no-repeat; /* que no repita la imagen */
